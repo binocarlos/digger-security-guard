@@ -1,0 +1,25 @@
+{
+  "name": "digger-security-guard",
+  "version": "0.0.1",
+  "description": "OAuth manager for digger servers - connects to a digger warehouse for storage",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/binocarlos/digger-security-guard.git"
+  },
+  "keywords": [
+    "digger",
+    "oauth"
+  ],
+  "author": "Kai Davenport",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/binocarlos/digger-security-guard/issues"
+  },
+  "dependencies": {
+    "goauth": "0.0.13"
+  }
+}
