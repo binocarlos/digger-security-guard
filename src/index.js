@@ -103,6 +103,10 @@ module.exports = function(config, $digger){
 
 		var user = $digger.container('user', data);
 
+		console.log('-------------------------------------------');
+		console.dir(user.toJSON());
+
+
 		userwarehouse
 			.append(user)
 			.ship(function(){
@@ -137,6 +141,9 @@ module.exports = function(config, $digger){
 
 	auth.on('register', function(data, callback){
 		load_user(data.username, function(error, user){
+			console.log('-------------------------------------------');
+			console.log('user loaded');
+			console.dir(user);
 
 			if(!error || user){
 				callback('user ' + data.username + ' already exists')
