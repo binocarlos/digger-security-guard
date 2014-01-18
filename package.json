@@ -20,6 +20,7 @@
     "url": "https://github.com/binocarlos/digger-security-guard/issues"
   },
   "dependencies": {
-    "goauth": "0.0.13"
+    "goauth": "0.0.13",
+    "twitter-profile": "0.0.1"
   }
 }
