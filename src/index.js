@@ -355,8 +355,8 @@ module.exports = function(config, $digger){
 						createdata[service + '_user'] = diggeruser;
 						//createdata[service + '_data'] = data;
 						createdata[service + '_tokens'] = {
-							token:data.token,
-							refresh_token:data.refresh_token
+							token:packet.token,
+							refresh_token:packet.refresh_token
 						}
 
 						create_user(createdata, function(error, dbuser){
