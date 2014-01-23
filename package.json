@@ -1,6 +1,6 @@
 {
   "name": "digger-security-guard",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "OAuth manager for digger servers - connects to a digger warehouse for storage",
   "main": "src/index.js",
   "scripts": {
