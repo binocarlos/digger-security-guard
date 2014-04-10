@@ -15,7 +15,8 @@ module.exports = function(config, $digger){
 			connect to the backend warehouse that contains our users
 		
 	*/
-	var userwarehouse = $digger.connect(config.warehouse);
+
+	var userwarehouse = typeof(config.warehouse)=='string' ? $digger.connect(config.warehouse) : config.warehouse;
 
 	/*
 	
@@ -380,10 +381,6 @@ module.exports = function(config, $digger){
 		
 
 	})
-
-	auth._diggermount = function(app, fn, route){
-		app.use(fn);
-	}
 
 	return auth;
 }
